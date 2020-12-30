@@ -22,14 +22,20 @@ class SingUp extends Component {
 
     newUserHandler = (user) => {
         debugger;
-        axios.post('user/SingUp', user).then(console.log("succesfull !!!"));
+        axios.post('user/SingUp', user).then(
+            res => {
+                localStorage.setItem('currentUser', JSON.stringify(res.data));
+            }).catch(err => {
+                console.log("not good! :(");
+            })
     }
+
     render() {
         return (
             <Segment id="registerForm">
                 <Grid textAlign='center' style={{ height: '60vh' }} verticalAlign='middle'>
                     <Grid.Column style={{ maxWidth: 400 }}>
-                        <Header as='h2' color='teal' textAlign='center'>
+                        <Header as='h2' color='teal' textAlign='center' >
                             <Image src='/Capture.png' /> Create your account
                     </Header>
                         <Form size='large'>

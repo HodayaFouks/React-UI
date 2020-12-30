@@ -1,0 +1,33 @@
+.MuiFormControl-fullWidth{
+    border-radius: 15px;
+}
+
+/* .b{
+    background-color: #92D050;
+} */
+
+.in{
+    text-align: right;
+}
+
+.ind{
+    text-align: right;
+    width: 540px;
+}
+
+.MuiDialog-paperWidthSm{
+    width: 860px;
+}
+
+
+.l{
+     font-size:  14px !important;
+}
+
+
+
+.bg{
+    background-image: '\src\assets\BG.png';
+}
+
+
